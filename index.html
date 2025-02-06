@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Death Day</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="header">
+        <a href="index.html" class="logo">Death Day</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Death_day.html">Death Day</a>
+            <a href="about.html">About</a>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="hero">
+        <h1>Welcome to Death Day</h1>
+        <p>
+            Curious about your future? Enter your details and let our tool calculate 
+            the year when your journey might come to an end. Remember, this is for fun!
+        </p>
+        <ul class="key-points">
+            <li>Provide your date of birth to start the journey.</li>
+            <li>Reflect on your lifestyle choices for better predictions.</li>
+            <li>Get an estimated timeline to spark curiosity.</li>
+        </ul>
+        <a href="Death_day.html" class="cta-button">Start the Journey</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Death Day. All rights reserved.</p>
+            <p>For entertainment purposes only. This tool does not provide medical advice.</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a> | 
+            <a href="#">Contact Us</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Death Day Prediction</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Death_day.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="header">
+        <a href="index.html" class="logo">Death Day</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Death_day.html">Death Day</a>
+            <a href="about.html">About</a>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <h1>Welcome to Death Day Prediction</h1>
+        <p>Enter your details, and we'll predict the day you might leave this world. Remember, this is just for fun!</p>
+        
+        <!-- Form for Name and Birthdate -->
+        <form id="deathForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required placeholder="Enter your name">
+            
+            <label for="dob">Your Date of Birth:</label>
+            <input type="date" id="dob" required>
+            
+            <button type="submit"> Death Date</button>
+        </form>
+    </section>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">✖</span>
+            <h2>Your Predicted Death Day</h2>
+            <p id="nameText"></p>
+            <p id="ageText"></p>
+            <p id="deathDayText"></p>
+            <p id="remainingYearsText"></p>
+            <p id="deathAgeText"></p> <!-- Death age info -->
+        </div>
+    </div>
+
+    <script src="DD.js"></script>
+</body>
+</html>

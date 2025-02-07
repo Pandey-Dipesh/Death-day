@@ -33,7 +33,7 @@ document.getElementById('deathForm').addEventListener('submit', function (event)
     document.getElementById('deathDayText').innerText = `Your death day is: ${formattedDeathDate}`;
     document.getElementById('ageText').innerText = `Your current age: ${age}`;
     document.getElementById('remainingYearsText').innerText = `Remaining years: ${remainingYears}`;
-    document.getElementById('deathAgeText').innerText = `Your expected death age: ${deathAge}`;
+    //document.getElementById('deathAgeText').innerText = `Your expected death age: ${deathAge}`;
     document.getElementById('nameText').innerText = `Hello, ${name}!`;
 
     // Display the popup
